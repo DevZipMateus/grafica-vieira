@@ -35,11 +35,11 @@ const Header = () => {
         <div className="flex flex-col md:flex-row md:justify-between items-center mb-4 md:mb-2">
           {/* Contact Information */}
           <div className="flex flex-col md:flex-row md:space-x-6 text-sm text-gray-600 mb-2 md:mb-0 items-center">
-            <a href="mailto:graficavieiraap@hotmail.com" className="flex items-center hover:text-blue-600 transition-colors duration-300 mb-1 md:mb-0">
+            <a href="https://wa.me/5596991588629" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-blue-600 transition-colors duration-300 mb-1 md:mb-0">
               <Mail size={16} className="mr-2" />
               graficavieiraap@hotmail.com
             </a>
-            <a href="tel:+5596991588629" className="flex items-center hover:text-blue-600 transition-colors duration-300 whitespace-nowrap">
+            <a href="https://wa.me/5596991588629" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-blue-600 transition-colors duration-300 whitespace-nowrap">
               <Phone size={16} className="mr-2" />
               (96) 99158-8629
             </a>

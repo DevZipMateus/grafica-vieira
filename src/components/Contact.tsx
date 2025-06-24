@@ -53,7 +53,7 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Telefone</h3>
               <p className="text-gray-600 mb-4">Fale diretamente conosco</p>
               <a 
-                href="tel:+5596991588629"
+                href="https://wa.me/5596991588629"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
               >
                 <span>(96) 99158-8629</span>
@@ -70,10 +70,10 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">E-mail</h3>
               <p className="text-gray-600 mb-4">Envie sua mensagem</p>
               <a 
-                href="mailto:graficavieiraap@hotmail.com"
+                href="https://wa.me/5596991588629"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium text-sm"
               >
-                <span>graficavieiraap@hotmail.com</span>
+                <span>Contatar via WhatsApp</span>
               </a>
             </div>
           </div>

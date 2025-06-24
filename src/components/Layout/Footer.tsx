@@ -31,11 +31,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone className="mr-3 mt-1 flex-shrink-0 text-blue-400" size={18} />
-                <span>(96) 99158-8629</span>
+                <a href="https://wa.me/5596991588629" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                  (96) 99158-8629
+                </a>
               </li>
               <li className="flex items-start">
                 <Mail className="mr-3 mt-1 flex-shrink-0 text-blue-400" size={18} />
-                <span>graficavieiraap@hotmail.com</span>
+                <a href="https://wa.me/5596991588629" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                  graficavieiraap@hotmail.com
+                </a>
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 flex-shrink-0 text-blue-400" size={18} />

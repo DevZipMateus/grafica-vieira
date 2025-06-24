@@ -37,14 +37,14 @@ const FloatingButton = () => {
         </a>
         
         <a 
-          href="tel:+5596991588629" 
+          href="https://wa.me/5596991588629" 
           className="flex items-center bg-blue-600 text-white px-4 py-2 rounded-md shadow-lg hover:bg-blue-700 transition-all duration-300 gap-2 font-medium"
         >
           <span className="mr-1">Ligar</span>
         </a>
         
         <a 
-          href="mailto:graficavieiraap@hotmail.com" 
+          href="https://wa.me/5596991588629" 
           className="flex items-center bg-blue-600 text-white px-4 py-2 rounded-md shadow-lg hover:bg-blue-700 transition-all duration-300 gap-2 font-medium"
         >
           <span className="mr-1">E-mail</span>

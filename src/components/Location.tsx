@@ -90,13 +90,13 @@ const Location = () => {
                     nossa loja é de fácil acesso e próxima a diversos pontos comerciais.
                   </p>
                   <a 
-                    href="https://www.google.com/maps/dir//R.+Prof.+Tostes,+2426+-+Central,+Macapá+-+AP,+68901-316"
+                    href="https://wa.me/5596991588629"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-all inline-flex items-center gap-2 font-medium"
                   >
-                    <Navigation size={20} />
-                    Ver Direções
+                    <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
+                    Contatar via WhatsApp
                   </a>
                 </div>
               </div>
