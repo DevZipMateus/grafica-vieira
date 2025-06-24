@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
-
 const Contact = () => {
-  return (
-    <section id="contact" className="section bg-gray-50">
+  return <section id="contact" className="section bg-gray-50">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -36,7 +33,9 @@ const Contact = () => {
           </div>
           
           {/* Phone Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{
+          animationDelay: '0.1s'
+        }}>
             <div className="bg-blue-500 p-4 sm:p-6 flex items-center justify-center">
               <Phone className="text-white w-12 h-12 sm:w-16 sm:h-16" />
             </div>
@@ -50,18 +49,7 @@ const Contact = () => {
           </div>
           
           {/* Email Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-yellow-500 p-4 sm:p-6 flex items-center justify-center">
-              <Mail className="text-white w-12 h-12 sm:w-16 sm:h-16" />
-            </div>
-            <div className="p-4 sm:p-6 text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">E-mail</h3>
-              <p className="text-gray-600 mb-4 text-sm sm:text-base">Envie uma mensagem</p>
-              <a href="https://wa.me/5596991588629" className="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium w-full sm:w-auto">
-                <span className="text-sm sm:text-base">Enviar</span>
-              </a>
-            </div>
-          </div>
+          
         </div>
         
         {/* Address and Hours Card */}
@@ -99,8 +87,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
