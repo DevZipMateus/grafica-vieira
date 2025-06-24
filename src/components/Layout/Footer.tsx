@@ -39,7 +39,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 flex-shrink-0 text-blue-400" size={18} />
-                <span>Rua Professor Tostes, 2426 - Bairro Buritizal, Macapá - AP</span>
+                <span>Rua Professor Tostes, 2426 - Bairro Central, Macapá - AP, 68901-316</span>
               </li>
             </ul>
           </div>

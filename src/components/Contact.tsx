@@ -89,8 +89,8 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">Endereço</h4>
-                <p className="text-gray-600">Rua Professor Tostes, 2426 - Bairro Buritizal</p>
-                <p className="text-gray-600">Macapá - AP</p>
+                <p className="text-gray-600">Rua Professor Tostes, 2426 - Bairro Central</p>
+                <p className="text-gray-600">Macapá - AP, 68901-316</p>
               </div>
             </div>
             

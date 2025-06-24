@@ -23,7 +23,7 @@ const Location = () => {
           {/* Map Container */}
           <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg animate-fade-in">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.5234657!2d-51.0647!3d0.0456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMDInNDQuMiJOIDUxwrAwMycwNS4wIlc!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.463547281936!2d-51.08123962593757!3d0.04470699997689999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d61e7b7f7b7b7b7%3A0x7b7b7b7b7b7b7b7b!2sR.%20Prof.%20Tostes%2C%202426%20-%20Central%2C%20Macap%C3%A1%20-%20AP%2C%2068901-316!5e0!3m2!1spt-BR!2sbr!4v1703000000000!5m2!1spt-BR!2sbr"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -45,8 +45,8 @@ const Location = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Endereço</h3>
                   <p className="text-gray-700 text-lg">Rua Professor Tostes, 2426</p>
-                  <p className="text-gray-700">Bairro Buritizal</p>
-                  <p className="text-gray-700">Macapá - AP</p>
+                  <p className="text-gray-700">Bairro Central</p>
+                  <p className="text-gray-700">Macapá - AP, 68901-316</p>
                 </div>
               </div>
             </div>
@@ -86,11 +86,11 @@ const Location = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Como Chegar</h3>
                   <p className="text-gray-700 mb-4">
-                    Localizada no bairro Buritizal, uma das regiões centrais de Macapá, 
+                    Localizada no bairro Central, uma das regiões centrais de Macapá, 
                     nossa loja é de fácil acesso e próxima a diversos pontos comerciais.
                   </p>
                   <a 
-                    href="https://www.google.com/maps/dir//Rua+Professor+Tostes,+2426+-+Buritizal,+Macapá+-+AP"
+                    href="https://www.google.com/maps/dir//R.+Prof.+Tostes,+2426+-+Central,+Macapá+-+AP,+68901-316"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-all inline-flex items-center gap-2 font-medium"
