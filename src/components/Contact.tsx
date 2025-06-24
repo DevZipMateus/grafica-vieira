@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
-
 const Contact = () => {
-  return (
-    <section id="contact" className="section bg-gray-50">
+  return <section id="contact" className="section bg-gray-50">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -24,59 +21,22 @@ const Contact = () => {
           {/* WhatsApp Card */}
           <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in">
             <div className="bg-green-500 p-6 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" 
-                alt="WhatsApp" 
-                className="w-16 h-16"
-              />
+              <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-16 h-16" />
             </div>
             <div className="p-6 text-center">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">WhatsApp</h3>
               <p className="text-gray-600 mb-4">Atendimento rápido e prático</p>
-              <a 
-                href="https://wa.me/5596991588629" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
-              >
+              <a href="https://wa.me/5596991588629" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium">
                 <span>Enviar mensagem</span>
               </a>
             </div>
           </div>
           
           {/* Phone Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <div className="bg-blue-600 p-6 flex items-center justify-center">
-              <Phone className="w-16 h-16 text-white" />
-            </div>
-            <div className="p-6 text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Telefone</h3>
-              <p className="text-gray-600 mb-4">Fale diretamente conosco</p>
-              <a 
-                href="https://wa.me/5596991588629"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
-              >
-                <span>(96) 99158-8629</span>
-              </a>
-            </div>
-          </div>
+          
           
           {/* Email Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-gray-800 p-6 flex items-center justify-center">
-              <Mail className="w-16 h-16 text-yellow-400" />
-            </div>
-            <div className="p-6 text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">E-mail</h3>
-              <p className="text-gray-600 mb-4">Envie sua mensagem</p>
-              <a 
-                href="https://wa.me/5596991588629"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium text-sm"
-              >
-                <span>Contatar via WhatsApp</span>
-              </a>
-            </div>
-          </div>
+          
         </div>
         
         {/* Address and Hours Card */}
@@ -99,12 +59,7 @@ const Contact = () => {
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Redes Sociais</h4>
               
               <div className="space-y-3">
-                <a 
-                  href="https://www.instagram.com/vieira_sacolas?igsh=bnV4OG5iZHBsZnU1" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center text-gray-600 hover:text-pink-600 transition-colors"
-                >
+                <a href="https://www.instagram.com/vieira_sacolas?igsh=bnV4OG5iZHBsZnU1" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-600 hover:text-pink-600 transition-colors">
                   <Instagram size={20} className="mr-3" />
                   <span>@vieira_sacolas</span>
                 </a>
@@ -119,8 +74,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

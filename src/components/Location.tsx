@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { MapPin, Clock, Navigation } from 'lucide-react';
-
 const Location = () => {
-  return (
-    <section id="location" className="section bg-white">
+  return <section id="location" className="section bg-white">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -22,20 +19,15 @@ const Location = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Map Container */}
           <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg animate-fade-in">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.463547281936!2d-51.08123962593757!3d0.04470699997689999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d61e7b7f7b7b7b7%3A0x7b7b7b7b7b7b7b7b!2sR.%20Prof.%20Tostes%2C%202426%20-%20Central%2C%20Macap%C3%A1%20-%20AP%2C%2068901-316!5e0!3m2!1spt-BR!2sbr!4v1703000000000!5m2!1spt-BR!2sbr"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Localização da Gráfica Vieira"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.463547281936!2d-51.08123962593757!3d0.04470699997689999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d61e7b7f7b7b7b7%3A0x7b7b7b7b7b7b7b7b!2sR.%20Prof.%20Tostes%2C%202426%20-%20Central%2C%20Macap%C3%A1%20-%20AP%2C%2068901-316!5e0!3m2!1spt-BR!2sbr!4v1703000000000!5m2!1spt-BR!2sbr" width="100%" height="400" style={{
+            border: 0
+          }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Localização da Gráfica Vieira"></iframe>
           </div>
 
           {/* Location Info */}
-          <div className="space-y-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="space-y-8 animate-fade-in" style={{
+          animationDelay: '0.2s'
+        }}>
             {/* Address */}
             <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6">
               <div className="flex items-start">
@@ -78,34 +70,10 @@ const Location = () => {
             </div>
 
             {/* Directions */}
-            <div className="bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl p-6">
-              <div className="flex items-start">
-                <div className="bg-pink-600 p-3 rounded-full mr-4 flex-shrink-0">
-                  <Navigation className="text-white" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Como Chegar</h3>
-                  <p className="text-gray-700 mb-4">
-                    Localizada no bairro Central, uma das regiões centrais de Macapá, 
-                    nossa loja é de fácil acesso e próxima a diversos pontos comerciais.
-                  </p>
-                  <a 
-                    href="https://wa.me/5596991588629"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-all inline-flex items-center gap-2 font-medium"
-                  >
-                    <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
-                    Contatar via WhatsApp
-                  </a>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Location;
