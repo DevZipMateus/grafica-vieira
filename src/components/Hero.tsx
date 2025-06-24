@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
 
@@ -17,7 +16,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 animate-fade-in">
             <img 
-              src="/lovable-uploads/87632896-e25f-4f98-a578-0fbcdc0849db.png" 
+              src="/lovable-uploads/3435a92c-6bca-4c98-808a-8e4acf4cb217.png" 
               alt="Gráfica Vieira - Muito mais qualidade!" 
               className="h-20 md:h-32 w-auto mx-auto mb-6"
             />

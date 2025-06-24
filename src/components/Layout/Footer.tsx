@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="animate-fade-in">
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/87632896-e25f-4f98-a578-0fbcdc0849db.png" 
+                src="/lovable-uploads/3435a92c-6bca-4c98-808a-8e4acf4cb217.png" 
                 alt="Gráfica Vieira" 
                 className="h-16 w-auto mb-4"
               />
