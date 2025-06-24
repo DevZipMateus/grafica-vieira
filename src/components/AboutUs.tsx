@@ -1,96 +1,145 @@
 
 import React from 'react';
-import { Check, ArrowRight } from 'lucide-react';
+import { Clock, Award, Users, Target } from 'lucide-react';
 
 const AboutUs = () => {
+  const stats = [
+    {
+      icon: Clock,
+      number: "15+",
+      label: "Anos de experiência",
+      description: "Mais de uma década atendendo o mercado"
+    },
+    {
+      icon: Users,
+      number: "1000+",
+      label: "Clientes atendidos",
+      description: "Pequenos e médios empreendedores"
+    },
+    {
+      icon: Award,
+      number: "100%",
+      label: "Qualidade garantida",
+      description: "Compromisso com a excelência"
+    },
+    {
+      icon: Target,
+      number: "24h",
+      label: "Resposta rápida",
+      description: "Atendimento ágil e personalizado"
+    }
+  ];
+
   return (
-    <section id="about" className="section bg-gray-50">
+    <section id="about" className="section bg-white">
       <div className="container-custom">
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          {/* Left Column - Image */}
-          <div className="lg:w-1/2 animate-fade-in">
-            <div className="relative">
-              <div className="bg-corporate-blue/20 w-full h-full absolute -left-6 -top-6 rounded-lg"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
-                alt="Equipe de contabilidade trabalhando" 
-                className="relative z-10 rounded-lg shadow-lg w-full object-cover h-[400px]"
-              />
-              <div className="absolute -bottom-8 -right-8 bg-white rounded-lg shadow-lg p-6 z-20 animate-float">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center">
-                    <div className="w-3 h-3 bg-corporate-blue rounded-full mr-2"></div>
-                    <span className="text-sm font-medium text-gray-600">Desde 2010</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-3 h-3 bg-corporate-lightBlue rounded-full mr-2"></div>
-                    <span className="text-sm font-medium text-gray-600">+500 clientes</span>
-                  </div>
-                </div>
-                <div className="text-3xl font-bold text-gray-900">13</div>
-                <div className="text-sm text-gray-600">Anos de experiência em contabilidade</div>
-              </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Content */}
+          <div className="animate-fade-in">
+            <div className="inline-block bg-blue-100 text-blue-600 font-medium px-4 py-2 rounded-full text-sm mb-6">
+              Sobre a Gráfica Vieira
+            </div>
+            
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Mais de 15 anos <span className="text-blue-600">transformando sonhos em realidade</span>
+            </h2>
+            
+            <div className="space-y-4 text-gray-600 leading-relaxed">
+              <p>
+                A <strong className="text-gray-900">Gráfica Vieira</strong> é uma empresa consolidada no mercado de embalagens há mais de 15 anos, especializada principalmente em sacolas plásticas e de papel.
+              </p>
+              
+              <p>
+                Nossa missão é atender pequenos lojistas com tiragens que facilitam o orçamento do pequeno empreendedor, oferecendo produtos de alta qualidade que valorizam sua marca.
+              </p>
+              
+              <p>
+                Sabemos o quanto é importante para nossos clientes ter sua logomarca exposta em material de alta qualidade. Por isso, nossa maior preocupação sempre foi manter o padrão de excelência em todos os nossos produtos.
+              </p>
+              
+              <p className="text-blue-600 font-semibold text-lg">
+                "Transformando sonhos em realidade" - esse é nosso compromisso diário.
+              </p>
+            </div>
+
+            <div className="mt-8">
+              <a 
+                href="#contact" 
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition-all inline-flex items-center gap-2 font-semibold shadow-lg transform hover:scale-105"
+              >
+                Conheça nossos serviços
+              </a>
             </div>
           </div>
-          
-          {/* Right Column - Content */}
-          <div className="lg:w-1/2">
-            <div className="inline-block bg-corporate-blue/10 text-corporate-blue font-medium px-4 py-1.5 rounded-full text-sm mb-4 animate-fade-in">
-              Sobre Nós
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              Excelência em serviços contábeis para o seu negócio
-            </h2>
-            <p className="text-gray-600 mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Desde 2010, nosso escritório se dedica ao auxílio administrativo de empresas de diversos portes e segmentos, 
-              utilizando técnicas contábeis e administrativas modernas para oferecer o melhor serviço aos nossos clientes.
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-2 gap-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            {stats.map((stat, index) => (
+              <div 
+                key={index}
+                className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <stat.icon className="text-blue-600" size={28} />
+                </div>
+                
+                <div className="text-3xl font-bold text-blue-600 mb-2">
+                  {stat.number}
+                </div>
+                
+                <div className="text-gray-900 font-semibold mb-1">
+                  {stat.label}
+                </div>
+                
+                <div className="text-sm text-gray-600">
+                  {stat.description}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Values Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Nossos <span className="text-blue-600">Valores</span>
+            </h3>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Os princípios que nos guiam em cada projeto e nos conectam com nossos clientes.
             </p>
-            <p className="text-gray-600 mb-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              Nossa equipe técnica está em constante capacitação para oferecer soluções inovadoras na área contábil, 
-              garantindo tranquilidade e segurança para que você possa focar no crescimento do seu negócio.
-            </p>
-            
-            {/* Key Points */}
-            <div className="space-y-4 mb-8">
-              <div className="flex items-start animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                <div className="bg-corporate-blue/10 p-1 rounded-full mr-3 mt-1">
-                  <Check className="text-corporate-blue" size={16} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1">Equipe Qualificada</h4>
-                  <p className="text-gray-600">Profissionais especializados e em constante atualização</p>
-                </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-6 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="text-yellow-600" size={28} />
               </div>
-              
-              <div className="flex items-start animate-fade-in" style={{ animationDelay: '0.5s' }}>
-                <div className="bg-corporate-blue/10 p-1 rounded-full mr-3 mt-1">
-                  <Check className="text-corporate-blue" size={16} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1">Atendimento Personalizado</h4>
-                  <p className="text-gray-600">Cada cliente recebe atenção individualizada para suas necessidades</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start animate-fade-in" style={{ animationDelay: '0.6s' }}>
-                <div className="bg-corporate-blue/10 p-1 rounded-full mr-3 mt-1">
-                  <Check className="text-corporate-blue" size={16} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1">Tecnologia Avançada</h4>
-                  <p className="text-gray-600">Utilizamos as mais modernas ferramentas do mercado</p>
-                </div>
-              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-3">Qualidade</h4>
+              <p className="text-gray-600">
+                Compromisso com a excelência em cada produto, garantindo materiais duráveis e acabamento impecável.
+              </p>
             </div>
-            
-            <a 
-              href="#contact" 
-              className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium inline-flex animate-fade-in" 
-              style={{ animationDelay: '0.7s' }}
-            >
-              <span>Conheça Nossos Diferenciais</span>
-              <ArrowRight size={18} />
-            </a>
+
+            <div className="text-center p-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <div className="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="text-pink-600" size={28} />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-3">Parceria</h4>
+              <p className="text-gray-600">
+                Construímos relacionamentos duradouros, entendendo as necessidades específicas de cada cliente.
+              </p>
+            </div>
+
+            <div className="text-center p-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="text-blue-600" size={28} />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-3">Inovação</h4>
+              <p className="text-gray-600">
+                Sempre buscando novas soluções e tecnologias para oferecer o melhor resultado aos nossos clientes.
+              </p>
+            </div>
           </div>
         </div>
       </div>

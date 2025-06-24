@@ -1,39 +1,52 @@
+
 import React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
+
 const Hero = () => {
   const isMobile = useIsMobile();
-  return <section className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-neutral-900 to-neutral-800 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
+  
+  return (
+    <section className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-blue-900 to-blue-800 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1423592707957-3b212afa6733?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
       
-      {/* Decorative elements */}
-      <div className="absolute top-40 right-10 w-72 h-72 bg-amber-400/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl"></div>
+      {/* Decorative elements with CMYK colors */}
+      <div className="absolute top-40 right-10 w-72 h-72 bg-yellow-400/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl"></div>
       
       <div className="container-custom relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8 animate-fade-in">
+            <img 
+              src="/lovable-uploads/87632896-e25f-4f98-a578-0fbcdc0849db.png" 
+              alt="Gráfica Vieira - Muito mais qualidade!" 
+              className="h-20 md:h-32 w-auto mx-auto mb-6"
+            />
+          </div>
           
-          
-          <h1 className={`${isMobile ? 'text-3xl' : 'text-4xl md:text-5xl lg:text-6xl'} font-bold text-white leading-tight mb-6 animate-fade-in`} style={{
-          animationDelay: '0.1s'
-        }}>
-            Soluções contábeis inteligentes para empresas de todos os portes
+          <h1 className={`${isMobile ? 'text-3xl' : 'text-4xl md:text-5xl lg:text-6xl'} font-bold text-white leading-tight mb-6 animate-fade-in`} style={{animationDelay: '0.1s'}}>
+            Embalagens de <span className="text-yellow-400">qualidade superior</span> há mais de 15 anos
           </h1>
           
-          <p className="text-lg text-amber-200 mb-10 animate-fade-in" style={{
-          animationDelay: '0.2s'
-        }}>
-            Entre em contato conosco e solicite um orçamento para começar a usar hoje mesmo nossa contabilidade digital e eficiente.
+          <p className="text-lg text-blue-200 mb-4 animate-fade-in" style={{animationDelay: '0.2s'}}>
+            Transformando sonhos em realidade
           </p>
           
-          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{
-          animationDelay: '0.3s'
-        }}>
-            <a href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2">
-              <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
+          <p className="text-md text-blue-100 mb-10 animate-fade-in max-w-3xl mx-auto" style={{animationDelay: '0.3s'}}>
+            Especializados em sacolas plásticas e de papel, atendemos pequenos lojistas com tiragens que facilitam o pequeno empreendedor. Nossa experiência de mais de 15 anos nos consolidou no mercado, sempre priorizando a qualidade dos nossos produtos.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{animationDelay: '0.4s'}}>
+            <a 
+              href="https://wa.me/5596991588629" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg transition-all flex items-center justify-center gap-3 font-semibold shadow-lg transform hover:scale-105"
+            >
+              <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-6 h-6" />
               <span>Solicitar Orçamento</span>
             </a>
-            <a href="#services" className="btn-secondary">
-              Nossos serviços
+            <a href="#services" className="bg-white hover:bg-gray-50 text-blue-900 px-8 py-4 rounded-lg transition-all font-semibold shadow-lg transform hover:scale-105">
+              Nossos Serviços
             </a>
           </div>
         </div>
@@ -46,6 +59,8 @@ const Hero = () => {
           </path>
         </svg>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
