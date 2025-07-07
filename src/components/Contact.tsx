@@ -17,23 +17,23 @@ const Contact = () => {
         </div>
         
         {/* Contact Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 max-w-3xl mx-auto px-4 justify-center">
           {/* WhatsApp Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in col-span-1 sm:col-span-2 lg:col-span-1">
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in flex-1 max-w-sm">
             <div className="bg-green-500 p-4 sm:p-6 flex items-center justify-center">
               <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-12 h-12 sm:w-16 sm:h-16" />
             </div>
             <div className="p-4 sm:p-6 text-center">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">WhatsApp</h3>
               <p className="text-gray-600 mb-4 text-sm sm:text-base">Atendimento rápido e prático</p>
-              <a href="https://wa.me/5596991588629" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium w-full sm:w-auto">
+              <a href="https://wa.me/5596991588629" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium w-full">
                 <span className="text-sm sm:text-base">Enviar mensagem</span>
               </a>
             </div>
           </div>
           
           {/* Phone Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in flex-1 max-w-sm" style={{
           animationDelay: '0.1s'
         }}>
             <div className="bg-blue-500 p-4 sm:p-6 flex items-center justify-center">
@@ -42,14 +42,11 @@ const Contact = () => {
             <div className="p-4 sm:p-6 text-center">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Telefone</h3>
               <p className="text-gray-600 mb-4 text-sm sm:text-base">Ligue para nós</p>
-              <a href="https://wa.me/5596991588629" className="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium w-full sm:w-auto">
+              <a href="https://wa.me/5596991588629" className="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium w-full">
                 <span className="text-sm sm:text-base">Ligar</span>
               </a>
             </div>
           </div>
-          
-          {/* Email Card */}
-          
         </div>
         
         {/* Address and Hours Card */}
